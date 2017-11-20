@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/miltonsl/bin/zsh-syntax-highlighting/.git'
+let g:netrw_dirhist_2='/home/miltonsl/gitlab/profiles/manifests/elk'
+let g:netrw_dirhist_3='/home/miltonsl/gitlab/profiles/manifests/systems'
+let g:netrw_dirhist_4='/home/miltonsl/gitlab/profiles/manifests/www2'
+let g:netrw_dirhist_5='/home/miltonsl/gitlab/profiles/manifests/etsuir'
+let g:netrw_dirhist_6='/home/miltonsl/gitlab/profiles/manifests/systems/users'
+let g:netrw_dirhist_7='/home/miltonsl/gitlab/profiles/manifests/systems/filebeat'
+let g:netrw_dirhist_8='/home/miltonsl/gitlab/roles/manifests'
+let g:netrw_dirhist_9='/home/miltonsl/gitlab/profiles/manifests/elk'
