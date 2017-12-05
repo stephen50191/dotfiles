@@ -6,7 +6,7 @@ setopt appendhistory autocd extendedglob notify
 bindkey -e
 export GOPATH=~/go
 export PATH=i"$PATH:~/bin:$GOPATH/bin:$GOROOT/bin"
-#source ~/bin/zsh-git-prompt/zshrc.sh
+source ~/.bin/zsh-git-prompt/zshrc.sh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
