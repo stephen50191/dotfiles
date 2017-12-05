@@ -6,7 +6,7 @@ setopt appendhistory autocd extendedglob notify
 bindkey -e
 export GOPATH=~/go
 export PATH=i"$PATH:~/bin:$GOPATH/bin:$GOROOT/bin"
-source ~/bin/zsh-git-prompt/zshrc.sh
+#source ~/bin/zsh-git-prompt/zshrc.sh
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -71,7 +71,7 @@ bindkey "e[3~" delete-char
 #autoload zkbd
 #[[ ! -f ${ZDOTDIR:-$HOME}/.zkbd/$TERM-$VENDOR-$OSTYPE ]] && zkbd
 #source /home/miltonsl/.zkbd/xterm-256color-:0.0 
-source /home/miltonsl/.zkbd/xterm-:0.0
+#source /home/miltonsl/.zkbd/xterm-:0.0
 [[ -n ${key[Backspace]} ]] && bindkey "${key[Backspace]}" backward-delete-char
 [[ -n ${key[Insert]} ]] && bindkey "${key[Insert]}" overwrite-mode
 [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
@@ -89,4 +89,4 @@ source /home/miltonsl/.zkbd/xterm-:0.0
 
 #Always at the end
 cd ~
-source ~/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source ~/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
