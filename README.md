@@ -2,6 +2,8 @@
 
 To install run the following script:
 
+```
+
 #!/bin/bash
 
 # Creates an ssh key to github
@@ -32,3 +34,4 @@ config checkout
 config config status.showUntrackedFiles no
 
 config remote set-url origin git@github.com:stephen50191/dotfiles.git
+```
