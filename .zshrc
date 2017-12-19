@@ -21,6 +21,7 @@ PROMPT="%{$fg[yellow]%}%!%{$reset_color%}:%{$fg[blue]%}%n%{$reset_color%}@%{$fg[
 export RPROMPT='$(git_super_status)'
 source ~/.bin/zsh-git-prompt/zshrc.sh
 bindkey '^R' history-incremental-pattern-search-backward
+bindkey -m
 
 
 #Correct Key Bindings
