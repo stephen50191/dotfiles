@@ -17,8 +17,4 @@ fi
 
 
 # User specific aliases and functions
-export EDITOR=/usr/bin/vim
-
-alias ll="ls --color=auto -Flh"
-alias ls="ls --color=auto"
-alias sudos="sudo -s"
+~/.aliases
