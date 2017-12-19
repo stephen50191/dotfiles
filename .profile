@@ -5,9 +5,9 @@ if [ -f ~/.homedir ]; then
   ~/.homedir
 fi
 
-#if [ -f /etc/bashrc ]; then
-#	. /etc/bashrc
-#fi
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
 if [ -f /bin/zsh ]; then
   /bin/zsh
@@ -17,4 +17,4 @@ fi
 
 
 # User specific aliases and functions
-~/.aliases
+source ~/.aliases

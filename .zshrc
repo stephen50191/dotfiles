@@ -40,4 +40,4 @@ bindkey '^R' history-incremental-pattern-search-backward
 source ~/.aliases
 
 #Always at the end
-#source ~/bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.bin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
