@@ -2,6 +2,8 @@
 
 unset SSH_ASKPASS
 
+export INPUTRC=~/.inputrc
+
 export EDITOR=/usr/bin/vim
 export GOPATH=~/go
 export PATH="$PATH:~/.bin:~/bin:$GOPATH/bin:$GOROOT/bin"
@@ -14,15 +16,17 @@ alias sudos="sudo -s"
 alias dnf="sudo dnf"
 alias tmux="tmux -2"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias toroot='sudo -E su -p'
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
-#ssh() {
-#    if [ "$(ps -p $(ps -p $$ -o ppid=) -o comm=)" = "tmux" ]; then
-#        tmux set-window-option automatic-rename "off" 1>/dev/null
-#        tmux rename-window "$(echo $1 | cut -d "@" -f 2 | cut -d "." -f 1)"
-#        command ssh "$@"
-##        tmux set-window-option automatic-rename "on" 1>/dev/null
-#    else
-#        command ssh "$@"
-#    fi
-#}
+ssh() {
+    if [ "$(ps -p $(ps -p $$ -o ppid=) -o comm=)" = "tmux" ]; then
+        tmux set-window-option automatic-rename "off" 1>/dev/null
+        tmux rename-window "$(echo $1 | cut -d "@" -f 2 | cut -d "." -f 1)"
+        command ssh "$@"
+#        tmux set-window-option automatic-rename "on" 1>/dev/null
+    else
+        command ssh "$@"
+    fi
+}
 
