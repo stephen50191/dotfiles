@@ -44,12 +44,13 @@ function collapse_pwd {
 }
 
 #Adding git status to right side.
-source ~/.bin/zsh-git-prompt/zshrc.sh
+if [[ -z ~/.bin/zsh-git-prompt/zshrc.sh ]];then
+  source ~/.bin/zsh-git-prompt/zshrc.sh
+  export RPROMPT='$(git_super_status)'
+fi
 
 # Prompts
 export PROMPT="%{$fg[yellow]%}%!%{$reset_color%}:%{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg[white]%}%2~%{$reset_color%}%{$fg[red]%}>%{$reset_color%} "
-export RPROMPT='$(git_super_status)'
-
 
 bindkey '^R' history-incremental-pattern-search-backward
 
