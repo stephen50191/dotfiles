@@ -7,18 +7,18 @@ To install run the following script:
 #!/bin/bash
 
 # Creates an ssh key to github
-ssh-keygen -qb 4096 -f ~/.ssh/id_git
+# ssh-keygen -qb 4096 -f ~/.ssh/id_git
 
-cat ~/.ssh/id_git
+#cat ~/.ssh/id_git
 
-read -p "Add key to github then press enter to continue"
+#read -p "Add key to github then press enter to continue"
 
 #Adds correct key to ssh config.
-touch ~/.ssh/config
-grep -q -F 'host github.com' ~/.ssh/config || printf "host github.com\n  user git\n  identityfile ~/.ssh/id_git >> ~/.ssh/config
+#touch ~/.ssh/config
+#grep -q -F 'host github.com' ~/.ssh/config || printf "host github.com\n  user git\n  identityfile ~/.ssh/id_git >> ~/.ssh/config
 
 #Sets up the repo on the local machine.
-git clone --bare git@github.com:stephen50191/dotfiles.git $HOME/.cfg
+git clone --bare https://github.com/stephen50191/dotfiles.git $HOME/.cfg
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
